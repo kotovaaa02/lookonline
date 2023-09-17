@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>LOOK ONLINE</title>
+</head>
+
+<body class="col col-md-5 mx-auto">
+
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <!-- <div class="ms-auto me-3">
+                    <a href="#"><img src="img/search.svg" alt=""></a>
+                </div> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                    <img src="img/menu.svg" alt="">
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cabinet.html">Личный кабинет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="basket.html">Корзина</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="stores.html">Магазины</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="col nav-item" role="presentation">
+                    <button class="nav-link active link-active mx-auto" id="moscow-tab" data-bs-toggle="tab" data-bs-target="#moscow-tab-pane" type="button" role="tab" aria-controls="moscow-tab-pane" aria-selected="true">Москва |4|</button>
+                </li>
+                <li class="col nav-item" role="presentation">
+                    <button class="nav-link mx-auto" id="kazan" data-bs-toggle="tab" data-bs-target="#kazan-pane" type="button" role="tab" aria-controls="kazan-pane" aria-selected="false">Казань |2|</button>
+                </li>
+                <li class="col nav-item" role="presentation">
+                    <button class="nav-link mx-auto" id="piter" data-bs-toggle="tab" data-bs-target="#piter-pane" type="button" role="tab" aria-controls="piter-pane" aria-selected="false">Санкт-Петербург |1|</button>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="moscow-tab-pane" role="tabpanel" aria-labelledby="moscow-tab" tabindex="0">
+                <div class="container mt-3">
+                    <div class="street">
+                        УЛ. ДОЛГОРУКОВСКАЯ, 40
+                        <br>
+                        <span>М. НОВОСЛОБОДСКАЯ</span>
+                    </div>
+                    <div class="street mt-2">
+                        УЛИЦА БОЛЬШАЯ ДОРОГОМИЛОВСКАЯ, 8
+                        <br>
+                        <span>М. КИЕВСКАЯ</span>
+                    </div>
+                    <div class="street mt-2">
+                        ТОВАРИЩЕСКИЙ ПЕР., 1
+                        <br>
+                        <span>М. ТАГАНСКАЯ</span>
+                    </div>
+                    <div class="street mt-2">
+                        НОВОКУЗНЕЦКАЯ, 39
+                        <br>
+                        <span>М. ПАВЕЛЕЦКАЯ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="kazan-pane" role="tabpanel" aria-labelledby="kazan" tabindex="0">
+                <div class="container mt-3">
+                    <div class="street">
+                        УЛИЦА ДЕКАБРИСТОВ, 8
+                        <br>
+                        <span>М. КОЗЬЯ СЛОБОДА</span>
+                    </div>
+                    <div class="street mt-2">
+                        ПРОСПЕКТ ПОБЕДЫ, 33
+                        <br>
+                        <span>М. ПРОСПЕКТ ПОБЕДЫ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="piter-pane" role="tabpanel" aria-labelledby="piter" tabindex="0">
+                <div class="container mt-3">
+                    <div class="street">
+                        УЛИЦА ФУРШТАТСКАЯ, 42
+                        <br>
+                        <span>М. ЧЕРНЫШЕВСКАЯ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

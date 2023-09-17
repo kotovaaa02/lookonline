@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase !important;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+body,
+.modal-content {
+    background-color: #eeedea;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0 !important;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.navbar-toggler {
+    --bs-border-width: 0px;
+    --bs-navbar-toggler-focus-width: 0rem;
+    --bs-navbar-toggler-padding-x: 0rem;
+}
+
+.nav-tabs {
+    --bs-border-width: 0px;
+}
+
+.nav {
+    --bs-link-color: #000;
+    --bs-link-hover-color: #000;
+    --bs-body-bg: #eeedea;
+    --bs-link-color: #9e9b99;
+    --bs-link-hover-color: #676560;
+    --bs-emphasis-color: #676560;
+}
+
+.nav-link {
+    --bs-nav-link-padding-y: 0.2rem;
+    --bs-nav-link-color: #9e9b99;
+    --bs-nav-link-hover-color: #676560;
+}
+
+.nav-link.active {
+    --bs-navbar-active-color: #676560;
+    font-weight: 700;
+}
+
+.row {
+    --bs-gutter-x: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.card-info__title {
+    font-weight: 500;
+    color: #676560;
+    font-size: 16px;
+}
+
+.card-item__info {
+    font-weight: 500;
+    color: #9e9b99;
+    font-size: 14px;
+}
+
+.card-item__info span {
+    font-size: 17px;
+    color: #676560;
+}
+
+.card-item__block a {
+    font-size: 20px;
+    color: #9e9b99 !important;
+    text-decoration: none !important;
+}
+
+.card-item__block a:hover { 
+    color: #676560 !important;
+}
+
+.street {
+    color: #676560;
+    font-weight: 600;
+}
+
+.street span {
+    font-weight: 400;
+    color: #9e9b99;
+}
+
+.contacts-time,
+.stores-time,
+.info-question {
+    color: #676560;
+    font-weight: 600;
+}
+
+.contacts-title,
+.stores-title,
+.info-title {
+    font-weight: 400;
+    color: #9e9b99;
+}
+
+.contacts-button,
+.stores-button {
+    border: 1px solid #9e9b99;
+    font-size: 14px;
+    /* font-weight: 600;
+    font-size: 12px;
+    padding: 15px; */
+}
+
+.contacts-button a,
+.stores-button a {
+    color: #9e9b99;
+    text-decoration: none;
+}
+
+.contacts-button a:hover,
+.stores-button a:hover {
+    color: #676560;
+    text-decoration: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 2px;
+    background-color: #676560;
+}
+
+.modal {
+    --bs-modal-header-border-color: transparent;
+    --bs-modal-footer-border-color: transparent;
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal-footer {
+    flex-wrap: nowrap;
+}
+
+.dropdown {
+    width: 85%;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #9e9b99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown a {
+    color: #9e9b99;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.dropdown a:hover {
+    color: #676560;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-menu {
+    background-color: #eeedea;
+    border: 1px solid #9e9b99;
+    border-radius: 0;
+    padding: 0;
+}
+
+/* .dropdown-menu li:not(:last-child) {
+    border-bottom: 1px solid #9e9b99;
+} */
+
+.dropdown-item:hover {
+    color: #676560;
+    background-color: #eeedea;
+}
+
+.basket-button {
+    background-color: #9e9b99;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.basket-title {
+    font-weight: 700;
+    color: #676560;
+}
+
+.basket-btn {
+    border: 1px solid #9e9b99;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.basket-btn a {
+    color: #9e9b99;
+    text-decoration: none;
+}
+
+.basket-btn a:hover {
+    color: #676560;
+}
+
+.auth-title {
+    font-weight: 700;
+    color: #676560;
+    font-size: 20px;
+}
+
+form {
+    color: #9e9b99;
+}
+
+.form-control {
+    --bs-border-color: #9e9b99;
+    --bs-body-bg: transparent;
+    --bs-border-radius: 0;
+    --bs-body-color: #9e9b99;
+}
+
+.form-control:focus {
+    border-color: #9e9b99; 
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.auth-button button {
+    color: #9e9b99;
+    border: 1px solid #9e9b99;
+    background-color: transparent;
+}
+
+.auth-button button:hover {
+    color: #676560;
+}
+
+.profile-title {
+    font-weight: 700;
+    color: #676560;
+    font-size: 20px;
+}
+
+.profile-button a{
+    color: #9e9b99;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.profile-button a:hover {
+    color: #676560;
+}
+
+table {
+    --bs-body-bg: transparent;
+    --bs-border-color: #9e9b99;
+    text-align: center;
+}
+
+.table td {
+    color: #676560;
+    font-size: 15px;
+}

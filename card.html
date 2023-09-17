@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>LOOK ONLINE</title>
+</head>
+
+<body class="col col-md-5 mx-auto">
+
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <!-- <div class="ms-auto me-3">
+                    <a href="#"><img src="img/search.svg" alt=""></a>
+                </div> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                    <img src="img/menu.svg" alt="">
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cabinet.html">Личный кабинет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="basket.html">Корзина</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stores.html">Магазины</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="slider mt-3 mb-3">
+                <div id="carousel" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/1-2/1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/1-2/2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/1-2/3.jpg" class="img-fluid" alt="">
+                        </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="card-info mb-3">
+                <div class="card-info__title">
+                    ТОВАРЫ ИЗ ОБРАЗА
+                </div>
+                <div class="card-items">
+                    <div class="row">
+                        <div class="col card-item">
+                            <a class="mt-1" type="button" data-bs-toggle="modal" data-bs-target="#basketModal"><img class="img-fluid" src="img/1-2/4.jpg" alt=""></a> 
+                            
+                            <div class="card-item__block d-flex justify-content-between">
+                                <div class="card-item__info mt-2">
+                                    Джинсы <br>
+                                    <span>3690 RUB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col card-item">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title card-item__info mx-auto" id="basketModalLabel">Джинсы <br>
+                            <span>3690 RUB</span>
+                    </div>
+                    <div class="modal-body mx-auto">
+                        <img src="img/1-2/4.jpg" alt="" class="size img-fluid">
+                    </div>
+                    <div class="container modal-footer justify-content-between">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              ВЫБЕРИТЕ РАЗМЕР
+                              <img class="ms-1 text-center" width="10" src="img/arrow-down.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">S</a></li>
+                              <li><a class="dropdown-item" href="#">M</a></li>
+                              <li><a class="dropdown-item" href="#">L</a></li>
+                            </ul>
+                          </div>
+                        <div class="basket-button">
+                            <a href="basket.html"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.00017 0C6.19292 0 4.72786 1.45204 4.72786 3.24323V3.45952H4.06124C3.26063 3.45952 3.09077 3.46032 3.09077 3.46032L2.11429 14.4313C2.08819 14.8047 2 15.9996 2 15.9996C2 15.9996 2.94303 16 3.38753 16H12.6131C13.0576 16 14 15.9996 14 15.9996C14 15.9996 13.9124 14.8047 13.8864 14.4313L12.9077 3.45968C12.9077 3.45968 12.74 3.45952 11.9394 3.45952H11.2725V3.24323C11.2725 1.45204 9.80739 0 8.00017 0ZM9.96356 4.75681V5.83781H11.2725V4.75681H11.8727C11.8864 4.78146 11.9026 4.82358 11.9068 4.884L12.5806 14.521C12.5864 14.6046 12.5659 14.6676 12.5464 14.7027H3.45425C3.43476 14.6676 3.41424 14.6046 3.42009 14.521L4.09379 4.88399C4.09802 4.82354 4.11424 4.78146 4.12795 4.75681H4.72786V5.83781H6.03678V4.75681H9.96356ZM9.96356 3.45952V3.24323C9.96356 2.16852 9.0845 1.29729 8.00017 1.29729C6.91582 1.29729 6.03678 2.16852 6.03678 3.24323V3.45952H9.96356Z" fill="#EEEDEA"></path></svg></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
